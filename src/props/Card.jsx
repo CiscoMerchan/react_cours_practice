@@ -1,5 +1,6 @@
 import React from "react";
 import "./app.css"
+import Info from "./Info";
 function Card(props){
     return <div className="card">
       <div className="top">
@@ -10,9 +11,9 @@ function Card(props){
         />
       </div>
       <div className="bottom">
-        <p className="info">{props.phone}</p>
-        <p className="info">{props.email}</p>
-      </div>
+     <Info info ={props.phone} />
+     <Info info ={props.email} />
+     </div>   
     </div>
   
 }

@@ -3,6 +3,7 @@ import "./app.css"
 import Card from "./Card"
 import contacts from "./contacts";
 
+
 //1. Apply CSS styles to App.jsx component
 //to match the appearance on the completed app:
 //https://c6fkx.csb.app/
@@ -21,9 +22,10 @@ function App() {
         <Card 
             name="Cisco"
             img={contacts[0].imgURL}
-            phone="4984849414"
-            email="18519619849"
+            phone="155165"
+            email='fvgsfvgsf'
         />
+        
       </div>
     );
   }
