@@ -1,16 +1,15 @@
 import React from "react";
 
-function DictEmoji(){
+function DictEmoji(props){
     return<div className="term">
     <dt>
       <span className="emoji" role="img" aria-label="Tense Biceps">
-        💪
+        {props.img}
       </span>
-      <span>Tense Biceps</span>
+      <span>{props.title}</span>
     </dt>
     <dd>
-      “You can do that!” or “I feel strong!” Arm with tense biceps. Also
-      used in connection with doing sports, e.g. at the gym.
+      {props.text}
     </dd>
   </div>
 }

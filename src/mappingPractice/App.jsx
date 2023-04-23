@@ -1,5 +1,5 @@
 import React from "react";
-
+import  "./app.css"
 
 function App() {
   return (
@@ -9,12 +9,12 @@ function App() {
       </h1>
 
       <dl className="dictionary">
-        <div className="term">
+        {/* <div className="term">
           <dt>
             <span className="emoji" role="img" aria-label="Tense Biceps">
-              💪
+              img =💪
             </span>
-            <span>Tense Biceps</span>
+            <span>title =Tense Biceps</span>
           </dt>
           <dd>
             “You can do that!” or “I feel strong!” Arm with tense biceps. Also
@@ -46,7 +46,7 @@ function App() {
             face is laughing boundlessly. The emoji version of “rofl“. Stands
             for „rolling on the floor, laughing“.
           </dd>
-        </div>
+        </div> */}
       </dl>
     </div>
   );
