@@ -18,7 +18,7 @@ function Card(props){
 ReactDOM.render(
   <div>
     <h1>My Contacts</h1>
-    <!-- Each Card component have the props and the correspondant data the wants to be render on it -->
+    <!-- Each Card component have the props and the correspondant value the wants to be render on it -->
     <Card  
     title="Beyonce"
     img = "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
