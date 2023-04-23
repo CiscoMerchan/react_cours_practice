@@ -15,6 +15,7 @@ import contacts from "./contacts";
 // This function goes in the map fuction that will iterate the contacts object
 function createCard(contacts){
     return<Card 
+        key={contacts.id}
         name={contacts.name}
         img={contacts.imgURL}
         
