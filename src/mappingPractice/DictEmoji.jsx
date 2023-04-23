@@ -1,4 +1,5 @@
 import React from "react";
+import "./app.css" 
 
 function DictEmoji(props){
     return<div className="term">

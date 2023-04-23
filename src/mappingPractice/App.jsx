@@ -1,5 +1,7 @@
 import React from "react";
 import  "./app.css"
+import DictEmoji from "./DictEmoji";
+import emojipedia from "./emojipedia.js"
 
 function App() {
   return (
@@ -9,6 +11,11 @@ function App() {
       </h1>
 
       <dl className="dictionary">
+      <DictEmoji
+      img = {emojipedia[0].emoji}
+      title = {emojipedia[0].name}
+      text = {emojipedia[0].meaning}
+       />
         {/* <div className="term">
           <dt>
             <span className="emoji" role="img" aria-label="Tense Biceps">
