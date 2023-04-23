@@ -12,19 +12,24 @@ import contacts from "./contacts";
 //so the Card component can be reused for other contacts.
 //4. Import the contacts.js file to create card components.
 
-
+// This function goes in the map fuction that will iterate the contacts object
+function createCard(contacts){
+    return<Card 
+        name={contacts.name}
+        img={contacts.imgURL}
+        
+        phone={contacts.phone}
+        email={contacts.email}
+           />
+} 
 
 function App() {
     
     return (
+        
       <div>
         <h1 className="heading">My Contacts</h1>
-        <Card 
-            name="Cisco"
-            img={contacts[0].imgURL}
-            phone="155165"
-            email='fvgsfvgsf'
-        />
+        {contacts.map(createCard)}
         
       </div>
     );
