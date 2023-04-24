@@ -3,10 +3,20 @@ import "./app.css"
 import Header from "./Header";
 import Note from "./Note";
 import Footer from "./Footer";
+import notes from "./notes"
+//Part 2 //Challenge. Render all the notes inside notes.js as a seperate Note
+//component.
+
 function App(){
 
+
     return(<><Header />
-    <Note />
+    {notes.map(notes=> {return <Note
+     key = {notes.key}
+     title={notes.title}
+     content={notes.content}
+    />})}
+  
     <footer><Footer /></footer></>
     );
 }
